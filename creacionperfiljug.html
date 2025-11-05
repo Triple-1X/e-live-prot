@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Live — Inicio</title>
+<meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
+<link rel="icon" href="img/imglogo.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Alan+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="css/hoja.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="contenedor">
+
+<header class="header">
+  <div class="brand">
+    <a href="index.html" class="logo" aria-label="Ir al inicio">
+      <img src="img/logo 2.png" alt="E-Live">
+    </a>
+  </div>
+  <nav class="nav" aria-label="Navegación principal">
+    <ul class="nav_lista">
+      <li class="submenu">
+        <a href="#">Jugadores</a>
+        <ul class="submenu_lista">
+          <li><a href="jugadores_lol.html">League of Legends</a></li>
+          <li><a href="jugadores_val.html">Valorant</a></li>
+          <li><a href="jugadores_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#">Equipos</a>
+        <ul class="submenu_lista">
+          <li><a href="equipos_lol.html">League of Legends</a></li>
+          <li><a href="equipos_val.html">Valorant</a></li>
+          <li><a href="equipos_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#noticias">Noticias</a>
+      </li>
+	  <li>
+        <a href="scrims.html">Scrims</a>
+      </li>
+      <li class="submenu crear-perfil">
+        <a href="#" class="btn_crear_perfil">Crear perfil</a>
+        <ul class="submenu_lista">
+          <li><a href="creacionperfiljug.html">Jugador</a></li>
+          <li><a href="creacionperfilequ.html">Equipo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="crear_perfil_layout">
+  <div class="crear_perfil_caja">
+
+    <h2>Crear perfil de jugador</h2>
+
+    <!-- Nickname -->
+    <div class="campo">
+      <label>Nickname</label>
+      <input type="text" placeholder="">
+    </div>
+	  
+	  <div class="campo">
+        <label>Descripción breve</label>
+        <input type="text" placeholder="">
+      </div>
+
+    <!-- Selección de juegos -->
+    <div class="juegos_box">
+      <h3>Selecciona los juegos que juegas</h3>
+
+      <div class="juegos_lista">
+
+        <!-- League of Legends -->
+        <div class="juego_item">
+          <input type="checkbox" id="juego_lol">
+          <label for="juego_lol">League of Legends</label>
+
+          <div class="juego_detalle">
+            <h4>League of Legends</h4>
+
+            <div class="campo">
+              <label>Rol</label>
+              <select>
+                <option>Top</option>
+                <option>Jungla</option>
+                <option>Mid</option>
+                <option>ADC</option>
+                <option>Support</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>ELO</label>
+              <select>
+                <option>Oro+</option>
+                <option>Platino+</option>
+                <option>Diamante+</option>
+                <option>Master+</option>
+                <option>Grandmaster / Challenger</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Servidor principal</label>
+              <select>
+                <option>LAN</option>
+                <option>LAS</option>
+                <option>BR</option>
+                <option>NA</option>
+                <option>EUW</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Región</label>
+              <select>
+                <option>LATAM Norte</option>
+                <option>LATAM Sur</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Valorant -->
+        <div class="juego_item">
+          <input type="checkbox" id="juego_val">
+          <label for="juego_val">Valorant</label>
+
+          <div class="juego_detalle">
+            <h4>Valorant</h4>
+
+            <div class="campo">
+              <label>Rol</label>
+              <select>
+                <option>Duelista</option>
+                <option>Centinela</option>
+                <option>Controlador</option>
+                <option>Iniciador</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Rango</label>
+              <select>
+                <option>Oro+</option>
+                <option>Platino+</option>
+                <option>Diamante+</option>
+                <option>Ascendant+</option>
+                <option>Immortal / Radiant</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Servidor principal</label>
+              <select>
+                <option>LATAM Norte</option>
+                <option>LATAM Sur</option>
+                <option>Brasil</option>
+                <option>NA</option>
+                <option>EU</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Región</label>
+              <select>
+                <option>LATAM Norte</option>
+                <option>LATAM Sur</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Counter-Strike 2 -->
+        <div class="juego_item">
+          <input type="checkbox" id="juego_cs">
+          <label for="juego_cs">Counter-Strike 2</label>
+
+          <div class="juego_detalle">
+            <h4>Counter-Strike 2</h4>
+
+            <div class="campo">
+              <label>Rol</label>
+              <select>
+                <option>AWPer</option>
+                <option>Entry Fragger</option>
+                <option>Support</option>
+                <option>Lurker</option>
+                <option>IGL</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>ELO</label>
+              <select>
+                <option>Level 7+</option>
+                <option>Level 8+</option>
+                <option>Level 9+</option>
+                <option>Level 10+</option>
+                <option>Premier 22K+</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Servidor principal</label>
+              <select>
+                <option>LATAM Norte</option>
+                <option>LATAM Sur</option>
+                <option>Brasil</option>
+                <option>NA</option>
+                <option>EU</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label>Región</label>
+              <select>
+                <option>LATAM Norte</option>
+                <option>LATAM Sur</option>
+
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Datos comunes -->
+    <div class="comunes_box">
+      <h4>Entrenamientos y disponibilidad</h4>
+
+      <div class="campo">
+        <label>País de origen</label>
+        <select>
+          <option>Colombia</option>
+          <option>Argentina</option>
+          <option>Chile</option>
+          <option>México</option>
+          <option>Perú</option>
+          <option>Uruguay</option>
+          <option>Paraguay</option>
+          <option>Bolivia</option>
+          <option>Ecuador</option>
+          <option>Venezuela</option>
+          <option>Panamá</option>
+          <option>Costa Rica</option>
+          <option>El Salvador</option>
+          <option>Guatemala</option>
+          <option>República Dominicana</option>
+          <option>Puerto Rico</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Disponibilidad</label>
+        <select>
+          <option>Diaria</option>
+          <option>Semanal</option>
+          <option>Fines de semana</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Horario preferente</label>
+        <select>
+          <option>Mañana</option>
+          <option>Tarde</option>
+          <option>Noche</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Género</label>
+        <select>
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Prefiero no decirlo</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video_box campo">
+      <h4>Cargar clip o video</h4>
+      <input type="file" accept="video/*">
+    </div>
+
+    <!-- Correo y contraseña -->
+    <div class="seguridad_box">
+      <h4>Datos de acceso</h4>
+      <div class="campo">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="tuemail@ejemplo.com">
+      </div>
+      <div class="campo">
+        <label>Verificar correo</label>
+        <input type="email" placeholder="Repite tu correo">
+      </div>
+      <div class="campo">
+        <label>Contraseña</label>
+        <input type="password" placeholder="********">
+      </div>
+      <div class="campo">
+        <label>Verificar contraseña</label>
+        <input type="password" placeholder="********">
+      </div>
+    </div>
+
+    <button class="btn_crear_perfil_final">Crear perfil</button>
+
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer_caja">
+      
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-bolt"></i> E-Live</h4>
+      <p>
+        Plataforma LATAM dedicada al reclutamiento y visibilidad de talento en esports.
+        Conecta jugadores, equipos y torneos en un solo lugar.
+      </p>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-compass"></i> Explora</h4>
+      <ul class="footer_lista">
+		<li><a><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a><i class="fa-solid fa-users"></i> Jugadores</a></li>
+        <li><a><i class="fa-solid fa-people-group"></i> Equipos</a></li>
+        <li><a><i class="fa-regular fa-newspaper"></i> Noticias</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-share-nodes"></i> Conéctate</h4>
+      <ul class="footer_redes">
+        <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-twitch"></i> Twitch</a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-code"></i> Proyecto</h4>
+      <p>Prototipo académico — Universidad Santo Tomás</p>
+      <p>2025 E-Live/Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Live — Equipos Valorant</title>
+<meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
+<link rel="icon" href="img/imglogo.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Alan+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="css/hoja.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="contenedor">
+
+<header class="header">
+  <div class="brand">
+    <a href="index.html" class="logo" aria-label="Ir al inicio">
+      <img src="img/logo 2.png" alt="E-Live">
+    </a>
+  </div>
+  <nav class="nav" aria-label="Navegación principal">
+    <ul class="nav_lista">
+      <li class="submenu">
+        <a href="#">Jugadores</a>
+        <ul class="submenu_lista">
+          <li><a href="jugadores_lol.html">League of Legends</a></li>
+          <li><a href="jugadores_val.html">Valorant</a></li>
+          <li><a href="jugadores_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#">Equipos</a>
+        <ul class="submenu_lista">
+          <li><a href="equipos_lol.html">League of Legends</a></li>
+          <li><a href="equipos_val.html">Valorant</a></li>
+          <li><a href="equipos_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#noticias">Noticias</a>
+      </li>
+	  <li>
+        <a href="scrims.html">Scrims</a>
+      </li>
+      <li class="submenu crear-perfil">
+        <a href="#" class="btn_crear_perfil">Crear perfil</a>
+        <ul class="submenu_lista">
+          <li><a href="creacionperfiljug.html">Jugador</a></li>
+          <li><a href="creacionperfilequ.html">Equipo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="cabecera_seccion">
+  <div class="cabecera_caja">
+    <h2 class="t2">Equipos Valorant</h2>
+  </div>
+</section>
+
+<section class="equipos_layout">
+
+  <aside class="filtros" aria-label="Filtros de búsqueda">
+    <h3 class="filtros_titulo">Filtros</h3>
+
+    <!-- Rango mínimo -->
+    <details class="filtro">
+      <summary class="filtro_summary">Rango mínimo</summary>
+      <div class="filtro_lista">
+        <button data-group="elo" data-value="Oro+">Oro+</button>
+        <button data-group="elo" data-value="Platino+">Platino+</button>
+        <button data-group="elo" data-value="Diamante+">Diamante+</button>
+        <button data-group="elo" data-value="Ascendant+">Ascendant+</button>
+        <button data-group="elo" data-value="Immortal+">Immortal+</button>
+      </div>
+    </details>
+
+    <!-- Rol buscado -->
+    <details class="filtro">
+      <summary class="filtro_summary">Rol buscado</summary>
+      <div class="filtro_lista">
+        <button data-group="rol" data-value="Duelista">Duelista</button>
+        <button data-group="rol" data-value="Centinela">Centinela</button>
+        <button data-group="rol" data-value="Controlador">Controlador</button>
+        <button data-group="rol" data-value="Iniciador">Iniciador</button>
+      </div>
+    </details>
+
+    <!-- Servidor principal -->
+    <details class="filtro">
+      <summary class="filtro_summary">Servidor principal</summary>
+      <div class="filtro_lista">
+        <button data-group="servidor" data-value="LATAM Norte">LATAM Norte</button>
+        <button data-group="servidor" data-value="LATAM Sur">LATAM Sur</button>
+        <button data-group="servidor" data-value="NA">NA</button>
+        <button data-group="servidor" data-value="Brasil">Brasil</button>
+        <button data-group="servidor" data-value="EU">EU</button>
+      </div>
+    </details>
+
+    <!-- Región / País -->
+    <details class="filtro">
+      <summary class="filtro_summary">Región / País</summary>
+      <div class="filtro_lista">
+        <button data-group="region" data-value="LATAM Norte">LATAM Norte</button>
+        <button data-group="region" data-value="LATAM Sur">LATAM Sur</button>
+
+        <button data-group="pais" data-value="Colombia">Colombia</button>
+        <button data-group="pais" data-value="Argentina">Argentina</button>
+        <button data-group="pais" data-value="Chile">Chile</button>
+        <button data-group="pais" data-value="México">México</button>
+        <button data-group="pais" data-value="Perú">Perú</button>
+        <button data-group="pais" data-value="Uruguay">Uruguay</button>
+        <button data-group="pais" data-value="Paraguay">Paraguay</button>
+        <button data-group="pais" data-value="Bolivia">Bolivia</button>
+        <button data-group="pais" data-value="Ecuador">Ecuador</button>
+        <button data-group="pais" data-value="Venezuela">Venezuela</button>
+        <button data-group="pais" data-value="Panamá">Panamá</button>
+        <button data-group="pais" data-value="Costa Rica">Costa Rica</button>
+        <button data-group="pais" data-value="El Salvador">El Salvador</button>
+        <button data-group="pais" data-value="Guatemala">Guatemala</button>
+        <button data-group="pais" data-value="República Dominicana">República Dominicana</button>
+        <button data-group="pais" data-value="Puerto Rico">Puerto Rico</button>
+      </div>
+    </details>
+
+    <!-- Categoría -->
+    <details class="filtro">
+      <summary class="filtro_summary">Categoría</summary>
+      <div class="filtro_lista">
+        <button data-group="genero" data-value="Masculina">Masculina</button>
+        <button data-group="genero" data-value="Femenina">Femenina</button>
+        <button data-group="genero" data-value="Mixta">Mixta</button>
+      </div>
+    </details>
+
+    <!-- Disponibilidad -->
+    <details class="filtro">
+      <summary class="filtro_summary">Disponibilidad</summary>
+      <div class="filtro_lista">
+        <button data-group="disp" data-value="Diaria">Diaria</button>
+        <button data-group="disp" data-value="Semanal">Semanal</button>
+        <button data-group="disp" data-value="Fines de semana">Fines de semana</button>
+      </div>
+    </details>
+
+    <!-- Horario -->
+    <details class="filtro">
+      <summary class="filtro_summary">Horario preferente</summary>
+      <div class="filtro_lista">
+        <button data-group="horario" data-value="Mañana">Mañana</button>
+        <button data-group="horario" data-value="Tarde">Tarde</button>
+        <button data-group="horario" data-value="Noche">Noche</button>
+      </div>
+    </details>
+
+  </aside>
+
+  <!-- LISTA DE EQUIPOS -->
+  <section class="equipos_lista">
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Norte"
+             data-region="LATAM Norte"
+             data-pais="México"
+             data-elo="Immortal+"
+             data-rol="Duelista"
+             data-genero="Masculina"
+             data-disp="Diaria"
+             data-horario="Noche">
+      <a href="equipo_val_1.html" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam1.png" alt="RiftBreak LATAM">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">RiftBreak LATAM</h3>
+          <p class="eq_meta">Servidor principal: LATAM Norte</p>
+          <p class="eq_meta">Región: LATAM Norte • País: México</p>
+          <p class="eq_meta">Buscan: Duelista</p>
+          <p class="eq_meta">Rango mínimo: Immortal+</p>
+          <p class="eq_meta">Categoría: Masculina</p>
+          <p class="eq_meta">Disponibilidad: Diaria • Horario: Noche</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Sur"
+             data-region="LATAM Sur"
+             data-pais="Chile"
+             data-elo="Diamante+"
+             data-rol="Centinela"
+             data-genero="Mixta"
+             data-disp="Semanal"
+             data-horario="Tarde">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam2.png" alt="Aurora Squad">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Aurora Squad</h3>
+          <p class="eq_meta">Servidor principal: LATAM Sur</p>
+          <p class="eq_meta">Región: LATAM Sur • País: Chile</p>
+          <p class="eq_meta">Buscan: Centinela</p>
+          <p class="eq_meta">Rango mínimo: Diamante+</p>
+          <p class="eq_meta">Categoría: Mixta</p>
+          <p class="eq_meta">Disponibilidad: Semanal • Horario: Tarde</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Norte"
+             data-region="LATAM Norte"
+             data-pais="Colombia"
+             data-elo="Platino+"
+             data-rol="Iniciador"
+             data-genero="Femenina"
+             data-disp="Fines de semana"
+             data-horario="Tarde">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam3.png" alt="Valkyria Academy">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Valkyria Academy</h3>
+          <p class="eq_meta">Servidor principal: LATAM Norte</p>
+          <p class="eq_meta">Región: LATAM Norte • País: Colombia</p>
+          <p class="eq_meta">Buscan: Iniciador</p>
+          <p class="eq_meta">Rango mínimo: Platino+</p>
+          <p class="eq_meta">Categoría: Femenina</p>
+          <p class="eq_meta">Disponibilidad: Fines de semana • Horario: Tarde</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="NA"
+             data-region="LATAM Norte"
+             data-pais="Costa Rica"
+             data-elo="Ascendant+"
+             data-rol="Controlador"
+             data-genero="Mixta"
+             data-disp="Diaria"
+             data-horario="Mañana">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam4.png" alt="Pulse Reign">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Pulse Reign</h3>
+          <p class="eq_meta">Servidor principal: NA</p>
+          <p class="eq_meta">Región: LATAM Norte • País: Costa Rica</p>
+          <p class="eq_meta">Buscan: Controlador</p>
+          <p class="eq_meta">Rango mínimo: Ascendant+</p>
+          <p class="eq_meta">Categoría: Mixta</p>
+          <p class="eq_meta">Disponibilidad: Diaria • Horario: Mañana</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Sur"
+             data-region="LATAM Sur"
+             data-pais="Argentina"
+             data-elo="Oro+"
+             data-rol="Iniciador"
+             data-genero="Masculina"
+             data-disp="Fines de semana"
+             data-horario="Noche">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam5.png" alt="Rebel Vision">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Rebel Vision</h3>
+          <p class="eq_meta">Servidor principal: LATAM Sur</p>
+          <p class="eq_meta">Región: LATAM Sur • País: Argentina</p>
+          <p class="eq_meta">Buscan: Iniciador</p>
+          <p class="eq_meta">Rango mínimo: Oro+</p>
+          <p class="eq_meta">Categoría: Masculina</p>
+          <p class="eq_meta">Disponibilidad: Fines de semana • Horario: Noche</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="Brasil"
+             data-region="LATAM Sur"
+             data-pais="Brasil"
+             data-elo="Immortal+"
+             data-rol="Controlador"
+             data-genero="Femenina"
+             data-disp="Semanal"
+             data-horario="Tarde">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam6.png" alt="Eclipse Vipers">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Eclipse Vipers</h3>
+          <p class="eq_meta">Servidor principal: Brasil</p>
+          <p class="eq_meta">Región: LATAM Sur • País: Brasil</p>
+          <p class="eq_meta">Buscan: Controlador</p>
+          <p class="eq_meta">Rango mínimo: Immortal+</p>
+          <p class="eq_meta">Categoría: Femenina</p>
+          <p class="eq_meta">Disponibilidad: Semanal • Horario: Tarde</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Norte"
+             data-region="LATAM Norte"
+             data-pais="Panamá"
+             data-elo="Diamante+"
+             data-rol="Centinela"
+             data-genero="Mixta"
+             data-disp="Semanal"
+             data-horario="Tarde">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam7.png" alt="Nova Valor Academy">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Nova Valor Academy</h3>
+          <p class="eq_meta">Servidor principal: LATAM Norte</p>
+          <p class="eq_meta">Región: LATAM Norte • País: Panamá</p>
+          <p class="eq_meta">Buscan: Centinela</p>
+          <p class="eq_meta">Rango mínimo: Diamante+</p>
+          <p class="eq_meta">Categoría: Mixta</p>
+          <p class="eq_meta">Disponibilidad: Semanal • Horario: Tarde</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="card_equipo_horizontal"
+             data-servidor="LATAM Sur"
+             data-region="LATAM Sur"
+             data-pais="Perú"
+             data-elo="Platino+"
+             data-rol="Duelista"
+             data-genero="Masculina"
+             data-disp="Fines de semana"
+             data-horario="Noche">
+      <a href="#" class="card_link">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam8.png" alt="Storm Agents">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Storm Agents</h3>
+          <p class="eq_meta">Servidor principal: LATAM Sur</p>
+          <p class="eq_meta">Región: LATAM Sur • País: Perú</p>
+          <p class="eq_meta">Buscan: Duelista</p>
+          <p class="eq_meta">Rango mínimo: Platino+</p>
+          <p class="eq_meta">Categoría: Masculina</p>
+          <p class="eq_meta">Disponibilidad: Fines de semana • Horario: Noche</p>
+        </div>
+      </a>
+    </article>
+
+  </section>
+</section>
+
+
+<footer class="footer">
+  <div class="footer_caja">
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-bolt"></i> E-Live</h4>
+      <p>Plataforma LATAM dedicada al reclutamiento y visibilidad de talento en esports.
+      Conecta jugadores, equipos y torneos en un solo lugar.</p>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-compass"></i> Explora</h4>
+      <ul class="footer_lista">
+        <li><a><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a><i class="fa-solid fa-users"></i> Jugadores</a></li>
+        <li><a><i class="fa-solid fa-people-group"></i> Equipos</a></li>
+        <li><a><i class="fa-regular fa-newspaper"></i> Noticias</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-share-nodes"></i> Conéctate</h4>
+      <ul class="footer_redes">
+        <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-twitch"></i> Twitch</a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-code"></i> Proyecto</h4>
+      <p>Prototipo académico — Universidad Santo Tomás</p>
+      <p>2025 E-Live / Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="js/js_filtros.js" defer></script>
+</body>
+</html>

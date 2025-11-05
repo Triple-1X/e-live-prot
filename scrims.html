@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Live — Scrims</title>
+<meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
+<link rel="icon" href="img/imglogo.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Alan+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="css/hoja.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="contenedor">
+
+<header class="header">
+  <div class="brand">
+    <a href="index.html" class="logo" aria-label="Ir al inicio">
+      <img src="img/logo 2.png" alt="E-Live">
+    </a>
+  </div>
+  <nav class="nav" aria-label="Navegación principal">
+    <ul class="nav_lista">
+      <li class="submenu">
+        <a href="#">Jugadores</a>
+        <ul class="submenu_lista">
+          <li><a href="jugadores_lol.html">League of Legends</a></li>
+          <li><a href="jugadores_val.html">Valorant</a></li>
+          <li><a href="jugadores_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#">Equipos</a>
+        <ul class="submenu_lista">
+          <li><a href="equipos_lol.html">League of Legends</a></li>
+          <li><a href="equipos_val.html">Valorant</a></li>
+          <li><a href="equipos_csgo.html">CSGO</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#noticias">Noticias</a>
+      </li>
+	  <li>
+        <a href="scrims.html">Scrims</a>
+      </li>
+      <li class="submenu crear-perfil">
+        <a href="#" class="btn_crear_perfil">Crear perfil</a>
+        <ul class="submenu_lista">
+          <li><a href="creacionperfiljug.html">Jugador</a></li>
+          <li><a href="creacionperfilequ.html">Equipo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- Cabecera de sección -->
+<section class="cabecera_seccion">
+  <div class="cabecera_caja">
+    <h1 class="t1">Scrims</h1>
+  </div>
+</section>
+
+<!-- ===================== SCRIMS: LEAGUE OF LEGENDS ===================== -->
+<section class="scrims_section">
+  <div class="scrims_bloque">
+    <div class="scrims_titulo">
+      <h2 class="t2">League of Legends</h2>
+    </div>
+
+    <div class="scrims_lista">
+      <!-- Equipo 1 -->
+      <article class="card_equipo_horizontal"
+        data-juego="LoL"
+        data-region="LATAM Norte"
+        data-disp="Semanal"
+        data-horario="Noche"
+        data-exp="Scrims Bo3">
+        <div class="equipo_logo_horizontal">
+          <img src="img/team1.png" alt="Nova Esports LATAM">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Nova Esports LATAM — Team A</h3>
+          <p class="eq_meta">Formato: Bo3 • Días: Lun/Jue • Horario: Noche</p>
+          <p class="eq_meta">Server: LAN • Experiencia: Scrims</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Equipo 2 -->
+      <article class="card_equipo_horizontal"
+        data-juego="LoL"
+        data-region="LATAM Sur"
+        data-disp="Fines de semana"
+        data-horario="Tarde"
+        data-exp="Bo1 Nacional">
+        <div class="equipo_logo_horizontal">
+          <img src="img/team3.png" alt="Zenith Academy">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Zenith Academy — Team Blue</h3>
+          <p class="eq_meta">Formato: Bo1 • Días: Sáb/Dom • Horario: Tarde</p>
+          <p class="eq_meta">Server: LAS • Experiencia: Bo1 Nacional</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SCRIMS: VALORANT ===================== -->
+<section class="scrims_section">
+  <div class="scrims_bloque">
+    <div class="scrims_titulo">
+      <h2 class="t2">Valorant</h2>
+    </div>
+
+    <div class="scrims_lista">
+      <article class="card_equipo_horizontal"
+        data-juego="Valorant"
+        data-region="LATAM Sur"
+        data-disp="Semanal"
+        data-horario="Noche"
+        data-exp="Bo3 Regional">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam2.png" alt="Aurora Squad">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Aurora Squad — Roster 2</h3>
+          <p class="eq_meta">Mapa pool estándar • Días: Mar/Vie • Horario: Noche</p>
+          <p class="eq_meta">Server: LATAM Sur • Experiencia: Bo3 Regional</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card_equipo_horizontal"
+        data-juego="Valorant"
+        data-region="México"
+        data-disp="Fines de semana"
+        data-horario="Tarde"
+        data-exp="Scrims Semanales">
+        <div class="equipo_logo_horizontal">
+          <img src="img/vteam4.png" alt="Pulse Reign">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Pulse Reign — Main</h3>
+          <p class="eq_meta">Bo3 • Días: Mié/Dom • Horario: Tarde</p>
+          <p class="eq_meta">Server: LATAM Norte • Experiencia: Scrims Semanales</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SCRIMS: COUNTER-STRIKE 2 ===================== -->
+<section class="scrims_section">
+  <div class="scrims_bloque">
+    <div class="scrims_titulo">
+      <h2 class="t2">Counter-Strike 2</h2>
+    </div>
+
+    <div class="scrims_lista">
+      <article class="card_equipo_horizontal"
+        data-juego="CS2"
+        data-region="Colombia"
+        data-disp="Semanal"
+        data-horario="Noche"
+        data-exp="Torneos LAN">
+        <div class="equipo_logo_horizontal">
+          <img src="img/cteam1.png" alt="Crimson Reign LATAM">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Crimson Reign — CR LATAM</h3>
+          <p class="eq_meta">MR12 • Días: Mar/Jue • Horario: Noche</p>
+          <p class="eq_meta">Server: LATAM Norte • Experiencia: Torneos LAN</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card_equipo_horizontal"
+        data-juego="CS2"
+        data-region="Perú"
+        data-disp="Fines de semana"
+        data-horario="Tarde"
+        data-exp="Scrims Internacionales">
+        <div class="equipo_logo_horizontal">
+          <img src="img/cteam4.png" alt="Redline Elite">
+        </div>
+        <div class="equipo_info_horizontal">
+          <h3 class="eq_nombre">Redline Elite — Roster Red</h3>
+          <p class="eq_meta">MR12 • Días: Sáb/Dom • Horario: Tarde</p>
+          <p class="eq_meta">Server: LATAM Sur • Experiencia: Scrims Internacionales</p>
+          <div class="scrim_actions">
+            <a href="#" class="btn_contactar scrim_btn">Solicitar scrim</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer_caja">
+      
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-bolt"></i> E-Live</h4>
+      <p>
+        Plataforma LATAM dedicada al reclutamiento y visibilidad de talento en esports.
+        Conecta jugadores, equipos y torneos en un solo lugar.
+      </p>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-compass"></i> Explora</h4>
+      <ul class="footer_lista">
+		<li><a><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a><i class="fa-solid fa-users"></i> Jugadores</a></li>
+        <li><a><i class="fa-solid fa-people-group"></i> Equipos</a></li>
+        <li><a><i class="fa-regular fa-newspaper"></i> Noticias</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-share-nodes"></i> Conéctate</h4>
+      <ul class="footer_redes">
+        <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-twitch"></i> Twitch</a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_col">
+      <h4><i class="fa-solid fa-code"></i> Proyecto</h4>
+      <p>Prototipo académico — Universidad Santo Tomás</p>
+      <p>2025 E-Live/Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
