@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>E-Live — Inicio</title>
+<title>E-Live — Creación Equipo</title>
 <meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
 <link rel="icon" href="img/imglogo.png" type="image/png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -21,8 +21,10 @@
       <img src="img/logo 2.png" alt="E-Live">
     </a>
   </div>
+
   <nav class="nav" aria-label="Navegación principal">
     <ul class="nav_lista">
+      
       <li class="submenu">
         <a href="#">Jugadores</a>
         <ul class="submenu_lista">
@@ -45,6 +47,9 @@
 	  <li>
         <a href="scrims.html">Scrims</a>
       </li>
+	  <li>
+        <a href="torneos.html">Torneos</a>
+      </li>
       <li class="submenu crear-perfil">
         <a href="#" class="btn_crear_perfil">Crear perfil</a>
         <ul class="submenu_lista">
@@ -60,8 +65,12 @@
     <div class="crear_perfil_caja">
 
       <h2>Crear perfil de equipo</h2>
-
-      <!-- Nombre del equipo -->
+		
+    <div class="video_box campo">
+      <h4>Cargar logo del equipo jpg</h4>
+      <input type="file" accept="video/*">
+    </div>
+		
       <div class="campo">
         <label>Nombre del equipo</label>
         <input type="text" placeholder="">
@@ -72,13 +81,11 @@
         <input type="text" placeholder="">
       </div>
 
-      <!-- Selección de juegos -->
       <div class="juegos_box">
         <h3>Selecciona los juegos en los que compite tu equipo</h3>
 
         <div class="juegos_lista">
 
-          <!-- League of Legends -->
           <div class="juego_item">
             <input type="checkbox" id="equipo_lol">
             <label for="equipo_lol">League of Legends</label>
@@ -122,7 +129,6 @@
             </div>
           </div>
 
-          <!-- Valorant -->
           <div class="juego_item">
             <input type="checkbox" id="equipo_val">
             <label for="equipo_val">Valorant</label>
@@ -166,7 +172,6 @@
             </div>
           </div>
 
-          <!-- Counter-Strike 2 -->
           <div class="juego_item">
             <input type="checkbox" id="equipo_cs">
             <label for="equipo_cs">Counter-Strike 2</label>
@@ -213,7 +218,6 @@
         </div>
       </div>
 
-      <!-- Datos comunes -->
       <div class="comunes_box">
         <h4>Información general del equipo</h4>
 
@@ -277,25 +281,17 @@
         </div>
       </div> 
 
-      <!-- Estado del equipo -->
-<!-- Estado del equipo -->
-<!-- =========================================================
-     🧩 BLOQUE: SCRIMS — versión mejorada tipo juegos_box
-     ========================================================= -->
 <div class="scrims_box">
   <h3>Scrims</h3>
 
   <div class="scrims_lista">
-    <!-- Bloque único para indicar si busca scrims -->
     <div class="scrims_item">
       <input type="checkbox" id="busca_scrims">
       <label for="busca_scrims">Este equipo busca scrims actualmente</label>
 
-      <!-- Panel oculto que se muestra al checkear -->
       <div class="scrims_detalle">
         <h4>Detalles de scrims</h4>
 
-        <!-- Formato -->
         <div class="campo">
           <label>Formato</label>
           <select>
@@ -305,7 +301,6 @@
           </select>
         </div>
 
-        <!-- Días -->
         <div class="campo dias_scrim">
           <label>Días disponibles</label>
           <div class="dias_lista">
@@ -319,7 +314,6 @@
           </div>
         </div>
 
-        <!-- Horario -->
         <div class="campo">
           <label>Horario preferido</label>
           <select>
@@ -333,10 +327,6 @@
   </div>
 </div>
 
-
-		
-		
-      <!-- Datos de contacto -->
       <div class="seguridad_box">
         <h4>Datos de acceso y contacto</h4>
 
@@ -409,4 +399,3 @@
 </div>
 </body>
 </html>
-

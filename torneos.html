@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>E-Live — jugador Val 2</title>
+<title>E-Live — Torneos</title>
 <meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
 <link rel="icon" href="img/imglogo.png" type="image/png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Alan+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="css/hoja.css" rel="stylesheet" type="text/css">
 </head>
-	
+
 <body>
 <div id="contenedor">
 
@@ -21,8 +21,10 @@
       <img src="img/logo 2.png" alt="E-Live">
     </a>
   </div>
+
   <nav class="nav" aria-label="Navegación principal">
     <ul class="nav_lista">
+      
       <li class="submenu">
         <a href="#">Jugadores</a>
         <ul class="submenu_lista">
@@ -45,6 +47,9 @@
 	  <li>
         <a href="scrims.html">Scrims</a>
       </li>
+	  <li>
+        <a href="torneos.html">Torneos</a>
+      </li>
       <li class="submenu crear-perfil">
         <a href="#" class="btn_crear_perfil">Crear perfil</a>
         <ul class="submenu_lista">
@@ -56,50 +61,81 @@
   </nav>
 </header>
 
-<section class="perfil_jugador">
-  <div class="perfil_contenedor">
+	
+<section class="cabecera_seccion">
+  <div class="cabecera_caja">
+    <h1 class="t1">Próximos Torneos</h1>
+  </div>
+</section>
+	
+	
+<section class="torneos_section">
+  <div class="torneos_caja">
 
-    <div class="perfil_header">
-      <div class="perfil_img">
-        <img src="img/val2.jpg" alt="Centinela Ascendant LATAM Sur">
+
+    <div class="torneos_lista">
+
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo LoL – “Clash LATAM”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> League of Legends</p>
+        <p class="torneo_info"><strong>Formato:</strong> Bo3 eliminatorio</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Platino +</p>
+        <p class="torneo_info"><strong>Entrada:</strong> Gratuita</p>
+        <button class="btn_inscribir">Inscribirse</button>
       </div>
 
-      <div class="perfil_info">
-        <h2 class="nick">Naru</h2>
-        <p><strong>Rol:</strong> Centinela</p>
-		<p><strong>País:</strong> Argentina</p>
-        <p><strong>Rango:</strong> Ascendant</p>
-        <p><strong>Región:</strong> LATAM Sur</p>
-        <p><strong>Disponibilidad:</strong> Diaria</p>
-        <p><strong>Genero:</strong> Masculino</p>
-        <p><strong>Horario:</strong> Tarde</p>
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo Valorant – “LATAM Valorant Cup”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> Valorant</p>
+        <p class="torneo_info"><strong>Formato:</strong> Bo5 fase de grupos + playoffs</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Diamante +</p>
+        <p class="torneo_info"><strong>Entrada:</strong> $10 USD</p>
+        <button class="btn_inscribir">Inscribirse</button>
       </div>
-    </div>
 
-    <div class="perfil_bio">
-      <h3>Sobre mí</h3>
-      <p>Centinela con precisión y control del ritmo de partida. Especialista en setups de Killjoy y Cypher para estrategias defensivas. 
-         Enfocado en comunicación clara y lectura táctica.</p>
-    </div>
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo CS2 – “Counter Strike 2 Open”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> Counter-Strike 2</p>
+        <p class="torneo_info"><strong>Formato:</strong> Eliminación simple 16 equipos</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Global Elite / EQUIPOS SERIOS</p>
+        <p class="torneo_info"><strong>Entrada:</strong> Gratuita</p>
+        <button class="btn_inscribir">Inscribirse</button>
+      </div>
 
-    <div class="perfil_video">
-      <h3>Highlights</h3>
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/PKFbNlKshnY"
-        frameborder="0" allowfullscreen></iframe>
-    </div>
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo LoL – “Liga E-Live Amateur”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> League of Legends</p>
+        <p class="torneo_info"><strong>Formato:</strong> Liga semanal 5 vs 5</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Oro +</p>
+        <p class="torneo_info"><strong>Entrada:</strong> Gratuita</p>
+        <button class="btn_inscribir">Inscribirse</button>
+      </div>
 
-    <div class="perfil_contacto">
-      <a href="#" class="btn_contactar">Contactar jugador</a>
-    </div>
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo Valorant – “Weekend Valorant Showdown”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> Valorant</p>
+        <p class="torneo_info"><strong>Formato:</strong> Bo3 doble eliminación</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Platino +</p>
+        <p class="torneo_info"><strong>Entrada:</strong> $5 USD</p>
+        <button class="btn_inscribir">Inscribirse</button>
+      </div>
 
+      <div class="torneo_card">
+        <h3 class="torneo_titulo">Torneo CS2 – “E-Live CS2 Championship”</h3>
+        <p class="torneo_info"><strong>Juego:</strong> Counter-Strike 2</p>
+        <p class="torneo_info"><strong>Formato:</strong> Bo5 final 8 equipos</p>
+        <p class="torneo_info"><strong>Elo mínimo:</strong> Master League / Equipos Pro</p>
+        <p class="torneo_info"><strong>Entrada:</strong> $20 USD</p>
+        <button class="btn_inscribir">Inscribirse</button>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="footer_caja">
-    
-	  
+      
     <div class="footer_col">
       <h4><i class="fa-solid fa-bolt"></i> E-Live</h4>
       <p>
@@ -138,6 +174,5 @@
 </footer>
 
 </div>
-
 </body>
 </html>

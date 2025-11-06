@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>E-Live — Inicio</title>
+<title>E-Live — Creación Jugador</title>
 <meta name="description" content="E-Live: plataforma de reclutamiento en esports para jugadores y equipos Tier 3 de Latinoamérica.">
 <link rel="icon" href="img/imglogo.png" type="image/png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -21,8 +21,10 @@
       <img src="img/logo 2.png" alt="E-Live">
     </a>
   </div>
+
   <nav class="nav" aria-label="Navegación principal">
     <ul class="nav_lista">
+      
       <li class="submenu">
         <a href="#">Jugadores</a>
         <ul class="submenu_lista">
@@ -45,6 +47,9 @@
 	  <li>
         <a href="scrims.html">Scrims</a>
       </li>
+	  <li>
+        <a href="torneos.html">Torneos</a>
+      </li>
       <li class="submenu crear-perfil">
         <a href="#" class="btn_crear_perfil">Crear perfil</a>
         <ul class="submenu_lista">
@@ -61,7 +66,11 @@
 
     <h2>Crear perfil de jugador</h2>
 
-    <!-- Nickname -->
+    <div class="video_box campo">
+      <h4>Cargar foto de perfil jpg</h4>
+      <input type="file" accept="video/*">
+    </div>
+	  
     <div class="campo">
       <label>Nickname</label>
       <input type="text" placeholder="">
@@ -72,13 +81,12 @@
         <input type="text" placeholder="">
       </div>
 
-    <!-- Selección de juegos -->
+
     <div class="juegos_box">
       <h3>Selecciona los juegos que juegas</h3>
 
       <div class="juegos_lista">
 
-        <!-- League of Legends -->
         <div class="juego_item">
           <input type="checkbox" id="juego_lol">
           <label for="juego_lol">League of Legends</label>
@@ -130,7 +138,6 @@
           </div>
         </div>
 
-        <!-- Valorant -->
         <div class="juego_item">
           <input type="checkbox" id="juego_val">
           <label for="juego_val">Valorant</label>
@@ -181,7 +188,6 @@
           </div>
         </div>
 
-        <!-- Counter-Strike 2 -->
         <div class="juego_item">
           <input type="checkbox" id="juego_cs">
           <label for="juego_cs">Counter-Strike 2</label>
@@ -237,7 +243,6 @@
       </div>
     </div>
 
-    <!-- Datos comunes -->
     <div class="comunes_box">
       <h4>Entrenamientos y disponibilidad</h4>
 
@@ -291,13 +296,11 @@
       </div>
     </div>
 
-    <!-- Video -->
     <div class="video_box campo">
       <h4>Cargar clip o video</h4>
       <input type="file" accept="video/*">
     </div>
 
-    <!-- Correo y contraseña -->
     <div class="seguridad_box">
       <h4>Datos de acceso</h4>
       <div class="campo">
@@ -322,9 +325,6 @@
 
   </div>
 </section>
-
-
-
 
 <footer class="footer">
   <div class="footer_caja">
@@ -369,4 +369,3 @@
 </div>
 </body>
 </html>
-
