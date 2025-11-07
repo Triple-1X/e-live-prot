@@ -477,7 +477,7 @@ a:hover {
 /*footer*/
 .footer {
   border-top: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.03);
+  background: #280626;
   padding: 4vh 4vw;
   color: #fff;
 }
@@ -1273,3 +1273,4 @@ background: #ff5c67;
   opacity: 0.2;           
   pointer-events: none;   
 }
+
