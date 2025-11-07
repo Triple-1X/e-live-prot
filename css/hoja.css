@@ -1261,9 +1261,10 @@ background: #ff5c67;
   height: 100%;
   object-fit: cover;      
   z-index: -1000;            
-  opacity: 0.15;           
+  opacity: 0.2;           
   pointer-events: none;   
 }
+
 
 
 
