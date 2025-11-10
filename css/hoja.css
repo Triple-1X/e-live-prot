@@ -1116,23 +1116,23 @@ background: #ff5c67;
 }
 
 /*para mac*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1512px) {
   body {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
 
   .nav_lista a,
   .btn_contactar,
   .btn_crear_perfil,
   .btn_inscribir {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
 
   .nick,
   .eq_nombre,
   .perfil_info .nick,
   .torneo_titulo {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .meta,
@@ -1140,20 +1140,18 @@ background: #ff5c67;
   .noticia_desc,
   .perfil_info p,
   .noticia_texto {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
   }
 
   .crear_perfil_caja h2,
   .perfil_bio h3,
   .scrims_box h3 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   .footer_col p,
   .footer_lista a,
   .footer_redes a {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 }
-
-
