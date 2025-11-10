@@ -236,7 +236,8 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 360px;
+  height: auto; 
+  min-height: 320px;
 }
 .jugador_img {
   height: 200px;
@@ -1155,3 +1156,4 @@ background: #ff5c67;
     font-size: 1.1rem;
   }
 }
+
