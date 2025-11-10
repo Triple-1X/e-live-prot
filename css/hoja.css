@@ -1118,36 +1118,42 @@ background: #ff5c67;
 /*para mac*/
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.15rem; /* antes 1rem — un ~15% más grande */
+    font-size: 1.25rem;
   }
+
   .nav_lista a,
   .btn_contactar,
   .btn_crear_perfil,
   .btn_inscribir {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
+
   .nick,
   .eq_nombre,
   .perfil_info .nick,
   .torneo_titulo {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
+
   .meta,
   .eq_meta,
   .noticia_desc,
   .perfil_info p,
   .noticia_texto {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
+
   .crear_perfil_caja h2,
   .perfil_bio h3,
   .scrims_box h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
+
   .footer_col p,
   .footer_lista a,
   .footer_redes a {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 }
+
 
