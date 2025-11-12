@@ -8,8 +8,8 @@ body {
   background-color: rgba(40, 6, 38, 0.96);
   color: #ffffff;
   font-family: 'Alan Sans', Arial, sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
 }
 img,
 video {
@@ -59,7 +59,7 @@ a:hover {
   gap: 5vw;
 }
 .nav_lista a {
-  font-size: 17.5px;        
+  font-size: 17px;        
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -796,13 +796,16 @@ a:hover {
   accent-color: #E2404A;
   transform: scale(1.2);
 }
+
 /*scrims*/
+
 .scrims-section {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 4vh 4vw;
 }
+
 .scrims-container {
   width: 100%;
   max-width: 1200px;
@@ -810,10 +813,13 @@ a:hover {
   flex-direction: column;
   gap: 3vh;
 }
+
+
 .scrims-header {
   border-bottom: 1px solid rgba(255,255,255,0.12);
   margin-bottom: 2vh;
 }
+
 .scrims-header h2 {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 1.9rem;     
@@ -821,6 +827,8 @@ a:hover {
   color: #E2404A;
   letter-spacing: 0.5px;
 }
+
+
 .scrims-list {
   display: flex;
   flex-wrap: wrap;
@@ -828,6 +836,8 @@ a:hover {
   align-items: stretch;
   gap: 2vw;
 }
+
+
 .scrim-card {
   display: flex;
   flex-direction: row;
@@ -839,10 +849,13 @@ a:hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 0 15px rgba(0,0,0,0.25);
 }
+
 .scrim-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 25px rgba(226, 64, 74, 0.8);
 }
+
+
 .scrim-logo {
   flex: 0 0 160px;
   background: rgba(0,0,0,0.3);
@@ -851,11 +864,14 @@ a:hover {
   justify-content: center;
   overflow: hidden;
 }
+
 .scrim-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
 .scrim-info {
   flex: 1;
   padding: 1.8vh 1.8vw;
@@ -864,27 +880,30 @@ a:hover {
   justify-content: center;
   gap: 0.6vh;
 }
+
 .scrim-team {
   font-weight: 700;
   font-size: 1.1rem;
   color: #ffffff;
 }
+
 .scrim-meta {
   font-size: 0.95rem;
   opacity: 0.9;
   color: #d2c7d9;
 }
-.scrim-info:hover 
-.scrim-team,
-.scrim-info:hover 
-.scrim-meta {
+
+.scrim-info:hover .scrim-team,
+.scrim-info:hover .scrim-meta {
   color: #E2404A;
 }
+
 .scrim-actions {
   margin-top: 1.6vh;
   display: flex;
   justify-content: flex-start;
 }
+
 .scrim-btn {
   background: #E2404A;
   color: #ffffff;
@@ -898,15 +917,19 @@ a:hover {
   text-align: center;
   transition: background 0.3s ease, transform 0.25s ease;
 }
+
 .scrim-btn:hover {
   background: #280626;
 }
+
 /*noticias*/
+
 .noticias_section {
   display: flex;
   justify-content: center;
   padding: 6vh 4vw 8vh;
 }
+
 .noticias_bloque {
   width: 100%;
   max-width: 1200px;
@@ -917,6 +940,7 @@ a:hover {
   justify-content: center;         
   gap: 2vw;                      
 }
+
 .card_noticia {
   flex: 1 1 340px;              
   max-width: 380px;               
@@ -927,36 +951,43 @@ a:hover {
   flex-direction: column;
   transition: background 0.3s ease, transform 0.25s ease;
 }
+
 .card_noticia:hover {
   background-color: rgba(226, 64, 74, 0.4);
   transform: translateY(-4px);
   border-color: #E2404A;
 }
+
 .noticia_link {
   color: inherit;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .noticia_img {
   height: 200px;
   overflow: hidden;
 }
+
 .noticia_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
+
 .card_noticia:hover .noticia_img img {
   transform: scale(1.05);
 }
+
 .noticia_info {
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
+
 .noticia_titulo {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 1.2rem;       
@@ -966,18 +997,22 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.3px;
 }
+
 .noticia_desc {
   color: #d2c7d9;
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 .noticia_fecha {
   color: #E2404A;
   font-size: 0.85rem;
   font-weight: 600;
   margin-top: auto;  
 }
+
 /*noticias solas*/
+
 .noticia_detalle {
   display: flex;
   justify-content: center;
@@ -986,6 +1021,7 @@ a:hover {
   padding: 6vh 5vw 8vh;
   flex-wrap: nowrap;
 }
+
 .noticia_articulo {
   flex: 1 1 65%;
   max-width: 850px;
@@ -995,10 +1031,12 @@ a:hover {
   box-shadow: 0 0 20px rgba(0,0,0,0.25);
   margin-left: 5vw; 
 }
+
 .noticia_cabecera {
   text-align: center;
   margin-bottom: 3vh;
 }
+
 .noticia_portada {
   width: 100%;
   height: 360px;
@@ -1006,6 +1044,7 @@ a:hover {
   border-radius: 12px;
   margin-bottom: 2vh;
 }
+
 .noticia_cabecera h1 {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 2.2rem;  
@@ -1014,11 +1053,13 @@ a:hover {
   margin-bottom: 0.6vh;
   text-transform: uppercase;
 }
+
 .noticia_meta {
   font-size: 15px;
   color: #ccc;
   opacity: 0.9;
 }
+
 .noticia_cuerpo {
   display: flex;
   flex-direction: column;
@@ -1043,6 +1084,7 @@ a:hover {
   flex-wrap: wrap;
   gap: 1.4vh;
 }
+
 .btn_volver {
   background: #E2404A;
   color: #fff;
@@ -1052,18 +1094,22 @@ a:hover {
   transition: 0.25s;
   font-size: 14px;
 }
+
 .btn_volver:hover {
   background: #280626
 }
+
 .compartir {
   display: flex;
   align-items: center;
   gap: 1vw;
 }
+
 .compartir span {
   font-weight: 600;
   color: #fff;
 }
+
 .compartir a {
   color: #E2404A;
   font-size: 18px;
@@ -1085,6 +1131,7 @@ a:hover {
   gap: 1.8vh;
   margin-right: 2vw;
 }
+
 .noticias_relacionadas h3 {
   color: #E2404A;
   font-size: 1.1rem;
@@ -1094,11 +1141,13 @@ a:hover {
   letter-spacing: 0.5px;
   margin-bottom: 1vh;
 }
+
 .noticias_relacionadas_lista {
   display: flex;
   flex-direction: column;
   gap: 1.5vh;
 }
+
 .rel_card {
   display: flex;
   flex-direction: column;
@@ -1109,22 +1158,26 @@ a:hover {
   transition: background 0.3s ease, transform 0.25s ease;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
+
 .rel_card:hover {
   background: rgba(226,64,74,0.25);
   transform: translateY(-3px);
   border-color: #E2404A;
 }
+
 .rel_card img {
   width: 100%;
   height: 140px;
   object-fit: cover;
 }
+
 .rel_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1.2vh 1vw 1.6vh;
 }
+
 .rel_info h4 {
   font-size: 0.95rem;
   color: #fff;
@@ -1132,6 +1185,7 @@ a:hover {
   line-height: 1.3;
   text-transform: uppercase;
 }
+
 /*seccion de Torneos*/
 .cabecera_seccion {
   padding: 3.2vh 4vw;
@@ -1213,6 +1267,7 @@ background: #ff5c67;
   opacity: 0.2;           
   pointer-events: none;   
 }
+
 /*Iluminaciones de caja*/
 .card_jugador,
 .card_equipo,
@@ -1233,6 +1288,7 @@ background: #ff5c67;
   transition: box-shadow 0.35s ease, border-color 0.35s ease;
   border: 1px solid rgba(255,255,255,0.1);
 }
+
 .card_jugador:hover,
 .card_equipo:hover,
 .card_equipo_horizontal:hover,
