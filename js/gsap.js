@@ -1,4 +1,3 @@
-
 gsap.from(".header", {
   y: -60,
   opacity: 0,
@@ -6,14 +5,12 @@ gsap.from(".header", {
   ease: "power3.out"
 });
 
-
 gsap.from("#contenedor", {
   opacity: 0,
   duration: 1.2,
   ease: "power2.out",
   delay: 0.2
 });
-
 
 gsap.from(".t1, .t2, h1, h2", {
   opacity: 0,
@@ -23,19 +20,19 @@ gsap.from(".t1, .t2, h1, h2", {
   ease: "power2.out"
 });
 
+const tarjetas =
+  ".card_jugador, .card_equipo, .card_equipo_horizontal, .card_noticia, .noticia_articulo, .torneo_card, .scrim-card";
 
-gsap.from(
-  ".card_jugador, .card_equipo, .card_equipo_horizontal, .card_noticia, .noticia, .torneo_card, .filtro, .filtros, .perfil_contenedor, .crear_perfil_caja, .comunes_box, .juegos_box, .scrims_box, .noticia_articulo",
-  {
+if (document.querySelector(tarjetas)) {
+  gsap.from(tarjetas, {
     opacity: 0,
     scale: 0.97,
     duration: 0.8,
     stagger: 0.08,
     ease: "power1.out",
     delay: 0.4
-  }
-);
-
+  });
+}
 
 gsap.from(".footer", {
   opacity: 0,
@@ -44,8 +41,3 @@ gsap.from(".footer", {
   ease: "power2.out",
   delay: 0.6
 });
-
-
-
-
-
